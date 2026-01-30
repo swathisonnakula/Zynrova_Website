@@ -21,7 +21,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section
         className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-background/95"
-        style={{ backgroundImage: "url('/home-2.png')" }}
+        style={{ backgroundImage: "url('/home-2.png')", backgroundSize: "cover" }}
       >
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
