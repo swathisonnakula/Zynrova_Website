@@ -77,7 +77,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-background/50 border-y border-white/10">
+      <section className="py-20 border-y border-white/10  bg-[#11141A]">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 text-balance leading-normal">
@@ -124,37 +124,37 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ServiceCard
-              icon={<Code className="w-8 h-8" />}
+              icon={"/web-dev.png"}
               title="Web Development"
               description="Custom websites and web applications built with modern technologies for optimal performance."
               linkColor="text-[#4A90E2]"
             />
             <ServiceCard
-              icon={<Palette className="w-8 h-8" />}
+              icon={"ui-ux.png"}
               title="UI/UX Design"
               description="Beautiful, intuitive interfaces that enhance user experience and drive engagement."
               linkColor="text-[#E91E63]"
             />
             <ServiceCard
-              icon={<Smartphone className="w-8 h-8" />}
+              icon={"app-dev.png"}
               title="Mobile App Development"
               description="Native and cross-platform mobile apps that deliver seamless experiences."
               linkColor="text-[#FF6B6B]"
             />
             <ServiceCard
-              icon={<Monitor className="w-8 h-8" />}
+              icon={"graphic.png"}
               title="Graphic Design"
               description="Eye-catching visual designs that strengthen your brand identity and message."
               linkColor="text-[#FFA726]"
             />
             <ServiceCard
-              icon={<TrendingUp className="w-8 h-8" />}
+              icon={"digital-marketing.png"}
               title="Digital Marketing"
               description="Strategic marketing campaigns that grow your online presence and reach."
               linkColor="text-[#9C27B0]"
             />
             <ServiceCard
-              icon={<TestTube className="w-8 h-8" />}
+              icon={"testing.png"}
               title="Software Testing"
               description="Comprehensive testing to ensure quality, reliability, and security."
               linkColor="text-[#00BCD4]"
@@ -164,7 +164,7 @@ export default function HomePage() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-background/50">
+      <section className="py-20  bg-[#11141A]">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -196,12 +196,12 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative mx-auto">
               <Image
-                src="/about.png"
+                src="/about-4.png"
                 alt="Team Working"
-                width={500}
-                height={500}
+                width={600}
+                height={600}
                 className="w-full h-auto"
               />
             </div>
@@ -223,22 +223,22 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
             <FeatureCard
-              icon="💼"
+              icon="solutions-1.png"
               title="Business-focused decisions"
               description="We align our tech solutions with your business goals."
             />
             <FeatureCard
-              icon="🎨"
+              icon="communication.png"
               title="Clear & simple communication"
               description="No jargon—just transparent updates and clear timelines."
             />
             <FeatureCard
-              icon="👥"
+              icon="dev-team.png"
               title="Experienced design & development team"
               description="Skilled professionals with proven track records."
             />
             <FeatureCard
-              icon="🤝"
+              icon="support.png"
               title="Flexible support & maintenance"
               description="Ongoing support to keep your systems performing at their best."
             />
@@ -247,7 +247,7 @@ export default function HomePage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-background/50">
+      <section className="py-20  bg-[#11141A]">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -293,32 +293,32 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <IndustryCard
-              icon="🚀"
+              icon="startup.png"
               title="Startups"
               description="AI that improves with every workflow."
             />
             <IndustryCard
-              icon="🛒"
+              icon="e-commerce.png"
               title="E-Commerce"
               description="Online stores and marketplaces."
             />
             <IndustryCard
-              icon="🏥"
+              icon="healthcare.png"
               title="Healthcare"
               description="Patient portals and health management systems."
             />
             <IndustryCard
-              icon="🎓"
+              icon="education.png"
               title="Education"
               description="E-learning platforms and LMS solutions"
             />
             <IndustryCard
-              icon="💰"
+              icon="finance.png"
               title="Finance"
               description="Fintech applications and payment systems"
             />
             <IndustryCard
-              icon="⚙️"
+              icon="solutions.png"
               title="Custom Solutions"
               description="Tailored software for unique business needs"
             />
@@ -327,7 +327,7 @@ export default function HomePage() {
       </section>
 
       {/* Technologies Section */}
-      <section className="py-20 bg-background/50">
+      <section className="py-20  bg-[#11141A]">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -337,16 +337,15 @@ export default function HomePage() {
               Modern tech stack to build cutting-edge products
             </p>
           </div>
-
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            <TechCard name="React.js" icon="⚛️" />
-            <TechCard name="Node.js" icon="🟢" />
-            <TechCard name="Flutter" icon="🎯" />
-            <TechCard name="WordPress" icon="🌐" />
-            <TechCard name="Unity" icon="🎮" />
-            <TechCard name="Python" icon="🐍" />
-            <TechCard name="Google Analytics" icon="📊" />
-            <TechCard name="MongoDB" icon="🍃" />
+            <TechCard name="React.js" icon="react.png" />
+            <TechCard name="Node.js" icon="node.png" />
+            <TechCard name="Flutter" icon="flutter.png" />
+            <TechCard name="WordPress" icon="wordpress.png" />
+            <TechCard name="AWS" icon="aws.png" />
+            <TechCard name="Figma" icon="figma.png" />
+            <TechCard name="Google Analytics" icon="analytics.png" />
+            <TechCard name="MongoDB" icon="mongoDb.png" />
           </div>
         </div>
       </section>
@@ -363,15 +362,23 @@ function ServiceCard({
   description,
   linkColor,
 }: {
-  icon: React.ReactNode;
+  icon:  string;
   title: string;
   description: string;
   linkColor: string;
 }) {
   return (
     <Card className="bg-card/50 border-white/10 p-6 hover:border-white/20 transition-all group">
-      <div className="bg-white/5 w-14 h-14 rounded-lg flex items-center justify-center mb-4 text-white group-hover:bg-white/10 transition-colors">
-        {icon}
+      <div className="bg-white/5 w-20 h-20 rounded-lg flex items-center justify-center mb-4 text-white group-hover:bg-white/10 transition-colors p-3">
+        {/* {icon} */}
+         <Image
+                  // src="/web-dev.png"
+                  src={icon}
+                  alt="VR Character"
+                  width={600}
+                  height={600}
+                  className=" h-auto"
+                />
       </div>
       <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
       <p className="text-white/60 mb-4 leading-relaxed text-sm">
@@ -398,7 +405,14 @@ function FeatureCard({
 }) {
   return (
     <Card className="bg-card/50 border-white/10 p-6 hover:border-white/20 transition-all text-center flex-row items-center">
-      <div className="text-4xl">{icon}</div>
+      <div className="bg-white/5 w-16 h-16 rounded-lg flex items-center justify-center text-white group-hover:bg-white/10 transition-colors p-3">
+      <div className="text-4xl"><Image
+                  src={icon}
+                  alt="VR Character"
+                  width={60}
+                  height={60}
+                  className=" h-auto"
+                /></div></div>
       <div className="text-left">
         <h3 className="text-lg font-bold text-white mb-2">{title}</h3>
         <p className="text-white/60 text-sm leading-relaxed">{description}</p>
@@ -443,7 +457,13 @@ function IndustryCard({
 }) {
   return (
     <Card className="bg-card/50 border-white/10 p-6 hover:border-white/20 transition-all">
-      <div className="text-4xl mb-4">{icon}</div>
+      <div className="text-4xl mb-4"> <Image
+                  src={icon}
+                  alt="VR Character"
+                  width={60}
+                  height={60}
+                  className=" h-auto"
+                /></div>
       <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
       <p className="text-white/60 text-sm leading-relaxed">{description}</p>
     </Card>
@@ -453,7 +473,15 @@ function IndustryCard({
 function TechCard({ name, icon }: { name: string; icon: string }) {
   return (
     <div className="flex flex-col items-center justify-center p-6 bg-card/30 border border-white/10 rounded-lg hover:border-white/20 transition-all">
-      <div className="text-4xl mb-3">{icon}</div>
+      <div className="text-4xl mb-3">
+        <Image
+                  src={icon}
+                  alt="VR Character"
+                  width={60}
+                  height={60}
+                  className=" h-auto"
+                />
+      </div>
       <p className="text-white text-sm font-medium text-center">{name}</p>
     </div>
   );

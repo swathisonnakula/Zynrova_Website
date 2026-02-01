@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Linkedin, Facebook, Instagram, Youtube } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -9,12 +10,17 @@ export function Footer() {
           {/* Logo and Description */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#FF6B6B] to-[#FF8E8E] rounded flex items-center justify-center">
+              {/* <div className="w-10 h-10 bg-gradient-to-br from-[#FF6B6B] to-[#FF8E8E] rounded flex items-center justify-center">
                 <span className="text-white font-bold text-xl">Z</span>
-              </div>
+              </div> */}
               <div className="flex flex-col">
-                <span className="text-white font-bold text-sm leading-none">ZYNROVA</span>
-                <span className="text-white/60 text-[10px] leading-none">Software Solutions</span>
+                 <Image
+                                  src="/logo-1.png"
+                                  alt="VR Character"
+                                  width={200}
+                                  height={200}
+                                  className=" h-auto"
+                                />
               </div>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed">
